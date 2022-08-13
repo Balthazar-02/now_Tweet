@@ -45,8 +45,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
-- [ ] when the user launches the application an animation is added before he can log in
-- [ ] Links in tweets are clickable and will launch the web browser
+- [x] when the user launches the application an animation is added before he can log in
+- [x] Links in tweets are clickable and will launch the web browser
 - [ ] User can watch embedded video within the tweet
 - [ ] user can save a photo post on twitter in his gallery 
 
