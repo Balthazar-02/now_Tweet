@@ -55,13 +55,12 @@ Here's a walkthrough of implemented user stories:
 
 <https://i.imgur.com/COPEAkr.gifv/>
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
 ## Notes
 
 Describe any challenges encountered while building the app.
 - trouble displaying tweets in the app
 - difficulty switching twitter to developer mode
+- difficulty adding the image to  the tweet
 
 
 ## Open-source libraries used
