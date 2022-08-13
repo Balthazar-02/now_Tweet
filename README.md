@@ -55,6 +55,8 @@ Here's a walkthrough of implemented user stories:
 
 <https://i.imgur.com/COPEAkr.gifv/>
 
+<https://i.imgur.com/hDklMGi.gifv/>
+
 ## Notes
 
 Describe any challenges encountered while building the app.
