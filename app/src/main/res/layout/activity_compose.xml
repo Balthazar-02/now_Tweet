@@ -32,7 +32,6 @@
         android:text="@string/tweet"
         android:background="@drawable/edit"/>
 
-
     <TextView
         android:id="@+id/tvCompt"
         android:layout_width="wrap_content"
