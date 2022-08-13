@@ -12,7 +12,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
         android:gravity="center">
 
 
@@ -20,6 +23,7 @@
             android:id="@+id/image1"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_margin="22dp"
             android:layout_gravity="center"
             android:src="@drawable/tw" />
 
@@ -28,13 +32,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/image1"
-            android:text="Welcome to now_tweet"
-            android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:textSize="25dp"
+            android:text="Welcome to now_tweet"
             android:textColor="#D3000000"
-            />
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>

@@ -11,8 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.FitCenter;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.codepath.apps.Balthazar.models.Tweet;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder> {
@@ -68,6 +71,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         TextView tvSymbol;
         TextView tvClock;
         TextView tvuserName;
+        ImageView media_url;
 
 
         public ViewHolder(@NonNull View itemView) {
@@ -77,6 +81,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
             tvClock = itemView.findViewById(R.id.tvClock);
             tvuserName = itemView.findViewById(R.id.tvuserName);
+            media_url = itemView.findViewById(R.id.media);
             tvSymbol = itemView.findViewById(R.id.Tag);
         }
 
@@ -85,7 +90,20 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvuserName.setText(tweet.user.name);
             tvScreenName.setText(tweet.user.screenName);
             tvClock.setText(tweet.getFormattedTimestamp());
+            media_url.setVisibility(View.GONE);
             Glide.with(context).load(tweet.user.profileImageUrl).into(ivProfileImage);
+
+            try {
+                List<String> ms = tweet.medias;
+                if (!ms.isEmpty()) {
+                    List<String> m = Arrays.asList(ms.get(0).split(" - "));
+                    if (m.get(1).equals("photo")) {
+
+                        media_url.setVisibility(View.VISIBLE);
+                        Glide.with(context).load(m.get(0)).transform(new FitCenter(), new RoundedCorners(12)).into(media_url);
+                    }
+                }
+            } catch (Exception e) {}
 
 
             }
