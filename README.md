@@ -2,7 +2,7 @@
 
 **Simple Twitter** is an android app that allows a user to view his Twitter timeline. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **6** hours spent in total
+Time spent: **10h** hours spent in total
 
 ## User Stories
 
@@ -18,7 +18,7 @@ The following **required** functionality is completed:
   - [x] User can then enter a new tweet and post this to twitter
   - [x] User is taken back to home timeline with **new tweet visible** in timeline
   - [x] Newly created tweet should be manually inserted into the timeline and not rely on a full refresh
-  - [ ] User can **see a counter with total number of characters left for tweet** on compose tweet page
+  - [x] User can **see a counter with total number of characters left for tweet** on compose tweet page
 
 
 The following **optional** features are implemented:
@@ -27,9 +27,9 @@ The following **optional** features are implemented:
 - [x] Improve the user interface and theme the app to feel "twitter branded"
 - [x] Links in tweets are clickable and will launch the web browser
 - [ ] User can tap a tweet to display a "detailed" view of that tweet
-- [ ] User can see embedded image media within the tweet detail view
+- [x] User can see embedded image media within the tweet detail view
 - [ ] User can watch embedded video within the tweet
-- [ ] User can open the twitter app offline and see last loaded tweets
+- [x] User can open the twitter app offline and see last loaded tweets
 - [ ] On the Twitter timeline, leverage the CoordinatorLayout to apply scrolling behavior that hides / shows the toolbar.
 - [ ] User is using **"Twitter branded" colors and styles**
 - [x] User can click links in tweets launch the web browser 
@@ -43,8 +43,6 @@ The following **optional** features are implemented:
 
 
 The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
 - [x] when the user launches the application an animation is added before he can log in
 - [x] Links in tweets are clickable and will launch the web browser
 - [ ] User can watch embedded video within the tweet
